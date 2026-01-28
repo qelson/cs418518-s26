@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+
+  <!-- 🔹 External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 🔹 Internal CSS -->
+  <style>
+    /* Internal CSS overrides external */
+    h1 {
+      color: darkgreen;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: orange;
+    }
+
+    #main {
+      border: 2px dashed #636e72;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="page-header">
+    <!-- 🔹 Inline CSS (highest priority) -->
+    <h1 style="color: crimson;">Student Profile</h1>
+    <p class="subtitle">CS418 / Web Programming</p>
+  </header>
+
+  <div id="main">
+
+    <h2>About Me</h2>
+
+    <p class="intro">
+      Hello! I am reviewing
+      <span style="color: blue; font-weight: bold;">HTML</span>
+      and
+      <span style="color: purple; font-weight: bold;">CSS</span>.
+    </p>
+
+    <img src="ODU-logo.jpg" alt="Profile picture">
+
+    <h2>Contact Form</h2>
+
+    <form>
+      <label>
+        Name:
+        <input type="text" name="username">
+      </label>
+
+      <label>
+        Password:
+        <input type="password" name="password">
+      </label>
+
+      <label>
+        Favorite Language:
+        <select name="language">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn-submit">
+        Submit
+      </button>
+    </form>
+
+  </div>
+
+</body>
+</html>
