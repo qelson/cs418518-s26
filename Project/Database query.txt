@@ -1,0 +1,15 @@
+CREATA DATABASE COURSE_ADVISING;
+
+--Table Creation Query
+CREATE TABLE USER_INFO(
+    u_id int not null PRIMARY KEY AUTO_INCREMENT,
+	u_first_name varchar(50) NOT NULL,
+    u_last_name varchar(50) not null,
+    u_email varchar(50) not null,
+    u_password varchar(150) not null,
+    u_is_verified int not null,
+    u_is_admin int not null
+)
+
+---Insert Record
+INSERT into USER_INFO (u_first_name,u_last_name,u_email,u_password,u_is_verified,u_is_admin) VALUES ('Nasreen', 'Arif','narif@odu.edu','123456789',0,0)
